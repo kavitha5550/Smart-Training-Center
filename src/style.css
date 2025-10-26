@@ -1,0 +1,111 @@
+/* ----------------------- Light Theme ----------------------- */
+:root {
+  /* Main */
+  --main-bg: #ffffff;        /* white main background */
+  --main-text: #000000;      /* black text */
+
+  /* Navbar */
+  --navbar-bg: #22c55e;      /* medium-light green navbar */
+  --navbar-text: #ffffff;     /* white text */
+
+  /* Sidebar */
+  --sidebar-bg: #16a34a;     /* darker green sidebar */
+  --sidebar-text: #ffffff;    /* white text */
+
+  /* Cards / Components */
+  --color-bg: #ffffff;        /* card background */
+  --color-fg: #000000;        /* card text */
+
+  /* Active / Hover */
+  --active-bg: #16a34a;       /* green active background */
+  --active-text: #ffffff;     /* white active text */
+  --hover-bg: #a7f3d0;        /* light green hover background */
+  --hover-text: #000000;      /* dark hover text in light theme */
+}
+
+/* ----------------------- Dark Theme ----------------------- */
+[data-theme="dark"] {
+  /* Main */
+  --main-bg: #1f2937;        /* dark gray main background */
+  --main-text: #ffffff;      /* white text */
+
+  /* Navbar */
+  --navbar-bg: #16a34a;      /* green navbar */
+  --navbar-text: #ffffff;     /* white text */
+
+  /* Sidebar */
+  --sidebar-bg: #374151;     /* medium gray sidebar */
+  --sidebar-text: #ffffff;    /* white text */
+
+  /* Cards / Components */
+  --color-bg: #111827;        /* dark card background */
+  --color-fg: #ffffff;        /* white card text */
+
+  /* Active / Hover */
+  --active-bg: #16a34a;       /* green active background */
+  --active-text: #ffffff;     /* white active text */
+  --hover-bg: #16a34a;        /* green hover background */
+  --hover-text: #ffffff;      /* white hover text in dark theme */
+}
+
+/* ----------------------- Global ----------------------- */
+body {
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  transition: all 0.3s ease;
+}
+
+nav {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
+  transition: all 0.3s ease;
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  transition: all 0.3s ease;
+}
+
+/* ----------------------- Cards / Components ----------------------- */
+.card {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  border: 1px solid var(--sidebar-bg);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-text);
+}
+
+/* ----------------------- Active / Hover Links ----------------------- */
+.active-link {
+  background-color: var(--active-bg);
+  color: var(--active-text);
+}
+
+.hover-link:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-text);
+}
+
+/* ----------------------- Buttons ----------------------- */
+.button {
+  background-color: var(--sidebar-hover);
+  color: var(--hover-text);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-text);
+}
+
